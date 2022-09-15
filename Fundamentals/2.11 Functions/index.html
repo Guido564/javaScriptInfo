@@ -15,6 +15,8 @@
             
             if (isNaN(x) || isNaN(n) || x == '' || n == '') {
                 alert('Ingrese un valor valido!! Atrevido')
+            } else if (n < 1) {
+                alert('No soportado, intentelo de nuevo')
             } else {
                 alert(x ** n)
             }
