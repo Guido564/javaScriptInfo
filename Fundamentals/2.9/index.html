@@ -13,10 +13,17 @@
 </head>
 <body>
 
-
-
 <script>
+    // Sigue pidiendo un numero hasta que dicho numero sea mayor a 100
+    let num = 0
 
+    while(num < 100) {
+        num = prompt('Ingrese un numero de ser posible superior a 100')
+
+        if (num > 100) break
+    }
+
+    alert(num)
 </script>
 </body>
 </html>
