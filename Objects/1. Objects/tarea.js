@@ -42,3 +42,23 @@ for (let total in salaries) {
 }
 
 console.log(sum)
+
+//Mult objetos numericos
+
+let menu = {
+    pastas: 200,
+    cerveza: 100,
+    titulo: 'Comida principal',
+}
+console.log(typeof menu.cerveza)
+function multiplyNumeric(objeto) {
+    for (let key in objeto) {
+        if (typeof objeto[key] == "number"){
+            objeto[key] *= 2
+        }
+    }
+}
+
+console.log(multiplyNumeric(menu))
+
+console.log(menu)
